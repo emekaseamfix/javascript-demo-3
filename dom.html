@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="dom.css" rel="stylesheet" />
+    <title>JavaScript DOM Tutorials</title>
+  </head>
+  <body>
+
+<!-- dom elements -->
+<h2>Finding HTML Elements by Id</h2>
+<p id="intro">Hello World!</p>
+<p>This example demonstrates the <b>getElementsById</b> method.</p>
+<p id="demo1a"></p>
+
+<h2>Finding HTML Elements by Tag Name</h2>
+<p>Hello World!</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+<p id="demo1b"></p>
+
+<h2>Finding HTML Elements by Tag Name</h2>
+<div id="main1c">
+<p>The DOM is very useful.</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+</div>
+<p id="demo1c"></p>
+
+<h2>Finding HTML Elements by Class Name</h2>
+<p>Hello World!</p>
+<p class="intro1d">The DOM is very useful.</p>
+<p class="intro1d">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+<p id="demo1d"></p>
+
+<h2>Finding HTML Elements by Query Selector</h2>
+<p>Hello World!</p>
+<p class="intro1e">The DOM is very useful.</p>
+<p class="intro1e">This example demonstrates the <b>querySelectorAll</b> method.</p>
+<p id="demo1e"></p>
+
+<h2>Finding HTML Elements Using document.forms</h2>
+<form id="frm1">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<p>Click "Try it" to display the value of each element in the form.</p>
+<button onclick="myFunction1f()">Try it</button>
+<p id="demo1f"></p>
+
+
+
+<!-- html -->
+<!-- css -->
+
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
+
+
+<h1 id="id1">My Heading 1</h1>
+<button type="button" onclick="document.getElementById('id1').style.color = 'red'">
+Click Me!</button>
+<button type="button" onclick="document.getElementById('id1').style.color = 'blue'">
+Click Me!</button>
+
+
+<!-- animation -->
+
+<h2>My First JavaScript Animation</h2>
+<p><button onclick="myMove()">Click Me</button></p> 
+<div id="container1g">
+<div id="animate1g"></div>
+</div>
+
+
+
+<!-- events -->
+<h1 onclick="changeText2a(this)">Click on this text!</h1>
+
+<p>Click the button to display the date.</p>
+<button onclick="displayDate2b()">The time is?</button>
+
+
+<div onload="checkCookies2b()">
+
+        <p id="demo2b"></p>
+
+</div>
+
+
+Enter your name: <input type="text" id="fname" onchange="myFunction2c()">
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+
+<div onmouseover="mOver2d(this)" onmouseout="mOut2d(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
+<div onmousedown="mDown2e(this)" onmouseup="mUp2e(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+<!-- eventlistener -->
+
+<h2>JavaScript addEventListener()</h2>
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+<button id="myBtn3a">Try it</button>
+<p id="demo3a"></p>
+
+<h2>JavaScript addEventListener()</h2>
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+<button id="myBtn3b">Try it</button>
+
+<h2>JavaScript addEventListener()</h2>
+<p>This example uses the addEventListener() method to add two click events to the same button.</p>
+<button id="myBtn3c">Try it</button>
+
+
+<h2>JavaScript addEventListener()</h2>
+<p>This example uses the addEventListener() method to add many events on the same button.</p>
+<button id="myBtn3d">Try it</button>
+<p id="demo3d"></p>
+
+<h2>JavaScript addEventListener()</h2>
+<p>This example uses the addEventListener() method on the window object.</p>
+<p>Try resizing this browser window to trigger the "resize" event handler.</p>
+<p id="demo3e"></p>
+
+<h2>JavaScript addEventListener()</h2>
+<p>This example demonstrates how to pass parameter values when using the addEventListener() method.</p>
+<p>Click the button to perform a calculation.</p>
+<button id="myBtn3f">Try it</button>
+<p id="demo3f"></p>
+
+
+<h2>JavaScript addEventListener()</h2>
+<div id="myDiv1">
+  <h2>Bubbling:</h2>
+  <p id="myP1">Click me!</p>
+</div><br>
+<div id="myDiv2">
+  <h2>Capturing:</h2>
+  <p id="myP2">Click me!</p>
+</div>
+
+
+<h2>JavaScript removeEventListener()</h2>
+<div id="myDIV3g">
+  <p>This div element has an onmousemove event handler that displays a random number every time you move your mouse inside this orange field.</p>
+  <p>Click the button to remove the div's event handler.</p>
+  <button onclick="removeHandler3g()" id="myBtn3g">Remove</button>
+</div>
+<p id="demo3g"></p>
+
+
+<!-- navigation -->
+
+<h1 id="id014a">My First Page</h1>
+<p id="id024a"></p>
+
+<h1 id="id014b">My First Page</h1>
+<p id="id024b"></p>
+
+<h1 id="id014c">My First Page</h1>
+<p id="id024c"></p>
+
+<h1 id="id014d">My First Page</h1>
+<p id="id024d"></p>
+
+<h1 id="id014e">My First Page</h1>
+<p id="id024e"></p>
+
+
+<!-- nodes -->
+
+<div id="div15a">
+    <p id="p15a">This is a paragraph.</p>
+    <p id="p25a">This is another paragraph.</p>
+</div>
+
+<div id="div15b">
+        <p id="p15b">This is a paragraph.</p>
+        <p id="p25b">This is another paragraph.</p>
+</div>
+
+<div id="div15c">
+    <p id="p15c">This is a paragraph.</p>
+    <p id="p25c">This is another paragraph.</p>
+</div>
+
+<div id="div15d">
+    <p id="p15d">This is a paragraph.</p>
+    <p id="p25d">This is another paragraph.</p>
+</div>
+
+
+<!-- collections -->
+
+<h2>JavaScript HTML DOM</h2>
+<p>Hello World!</p>
+<p>Hello Norway!</p>
+<p id="demo6a"></p>
+
+
+<h2>JavaScript HTML DOM</h2>
+<p>Hello World!</p>
+<p>Hello Norway!</p>
+<p id="demo6b"></p>
+
+<h2>JavaScript HTML DOM</h2>
+<p>Hello World!</p>
+<p>Hello Norway!</p>
+<p>Click the button to change the color of all p elements.</p>
+<button onclick="myFunction6c()">Try it</button>
+
+
+
+<!-- node lists -->
+
+
+
+
+
+
+    <script src="dom.js"></script>
+  </body>
+</html>
